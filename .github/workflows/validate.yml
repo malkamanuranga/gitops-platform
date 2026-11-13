@@ -20,7 +20,7 @@ jobs:
       matrix:
         overlay: [dev, prod]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Install kubeconform
         run: |
           curl -sSL https://github.com/yannh/kubeconform/releases/download/v0.6.7/kubeconform-linux-amd64.tar.gz | tar xz
