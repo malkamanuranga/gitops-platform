@@ -9,3 +9,5 @@ resources:
   - networkpolicy.yaml
   - ingress.yaml
   - serviceaccount.yaml
+  - resourcequota.yaml
+  - limitrange.yaml
