@@ -49,19 +49,6 @@ flowchart LR
 4. ArgoCD auto-syncs dev and staging.
 5. Prod waits for a human to click **Sync**. This is on purpose.
 
-## 🧩 Repository structure
-
-gitops-platform/
-├── base/ shared manifests used by every environment
-├── overlays/
-│ ├── dev/ namespace demo-dev, debug logs
-│ ├── staging/ namespace demo-staging
-│ └── prod/ namespace demo-prod, warn logs, bigger autoscaling range
-├── argocd/ one ArgoCD Application per environment
-├── policies/ Kyverno ClusterPolicies
-├── scripts/ render, validate and lint helpers
-├── docs/ decision records, runbook, security model
-└── .github/workflows/ CI: validate, yamllint, shellcheck
 
 ## 📄 File guide
 
